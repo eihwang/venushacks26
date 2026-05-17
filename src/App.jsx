@@ -67,7 +67,6 @@ function MotherPage() {
       </nav><section className="symptoms-section">
         <h2>Symptoms Survey</h2>
         <p>Report symptoms you have during pregnancy.</p>
-        <button type="submit">Submit</button>
 
         <div className="questions">
           <ul>
@@ -79,20 +78,35 @@ function MotherPage() {
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced dizziness or fainting spells</li>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've felt overwhelming or unusual tiredness/fatigue</li>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've had a cough that does not go away</li>
-            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood pressure</li>
-            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high cholesterol levels</li>
-            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood sugar or diabetes</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told I have high blood pressure</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told I have high cholesterol levels</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told I have high blood sugar or diabetes</li>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I have a personal or family history of heart disease or cardiovascular problems</li>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I am currently taking some sort of medication</li>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I currently use some sort of drugs or substances (including recreational drugs, tobacco, or vaping products)</li>
           </ul>
         </div>
+        
+        <button type="submit">Submit</button>
       </section>
     </main>
   );
 }
 
 function SupporterPage() {
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (e) => {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checed : target.value;
+    const name = target.name;
+    setInputs(values => ({ ...values, [name]: value }))
+  }
+
+  const handleSubmit = (event) => {
+    //implement submit logic
+  }
+
   return (
     <main className="page">
       <nav className="navbar">
@@ -113,11 +127,26 @@ function SupporterPage() {
         <h2>Symptoms Survey</h2>
         <p>Report symptoms you have experienced during pregnancy.</p>
 
-        <div className="question-row">
-          <span>Question:</span>
-          <span>Yes</span>
-          <span>No</span>
+        <div className="questions">
+          <ul>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has experienced trouble breathing recently</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has experienced chest pain or discomfort</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has noticed a fast, racing, or irregular heartbeat</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has experienced extreme swelling, especially in your legs, feet, or hands</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has experienced unusual or sudden weight gain</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has experienced dizziness or fainting spells</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has felt overwhelming or unusual tiredness/fatigue</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has had a cough that does not go away</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has high blood pressure</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has high cholesterol levels</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has high blood sugar or diabetes</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother has a personal or family history of heart disease or cardiovascular problems</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother is currently taking some sort of medication</li>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> Expectant mother currently uses some sort of drugs or substances (including recreational drugs, tobacco, or vaping products)</li>
+          </ul>
         </div>
+        
+        <button type="submit">Submit</button>
       </section>
     </main>
   );
