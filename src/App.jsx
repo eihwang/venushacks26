@@ -63,7 +63,9 @@ function MotherPage() {
           <a className="active">Symptoms</a>
           <Link to="/mother-resources">Resources</Link>
         </div>
-      </nav><section className="symptoms-section">
+      </nav>
+      
+      <section className="symptoms-section">
         <h2>Symptoms Survey</h2>
         <p>Report symptoms you have experienced during pregnancy.</p>
 
@@ -148,6 +150,7 @@ function SupporterPage() {
           <Link to="/">Home</Link>
           <a className="active">Symptoms</a>
           <Link to="/supporter-resources">Resources</Link>
+          <Link to="/supporter-checklist">Checklist</Link>
         </div>
       </nav>
 
@@ -178,6 +181,7 @@ function SupporterResourcesPage() {
           <Link to="/">Home</Link>
           <Link to="/supporter">Symptoms</Link>
           <a className="active">Resources</a>
+          <Link to="/supporter-checklist">Checklist</Link>
         </div>
       </nav>
 
@@ -213,6 +217,31 @@ function MotherResourcesPage() {
   );
 }
 
+function SupporterChecklistPage() {
+  return (
+    <main className="page">
+      <nav className="navbar">
+        <div className="brand">
+          <img src={duck} alt="Duck" />
+          <h1>Supporter</h1>
+        </div>
+
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/supporter">Symptoms</Link>
+          <Link to="/supporter-resources">Resources</Link>
+          <a className="active">Checklist</a>
+        </div>
+      </nav>
+
+      <section className="symptoms-section">
+        <h2>Checklist</h2>
+        <p>Here is a list of things for your to-go bag when the time comes!</p>
+      </section>
+    </main>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -222,6 +251,7 @@ export default function App() {
         <Route path="/supporter" element={<SupporterPage />} />
         <Route path="/mother-resources" element={<MotherResourcesPage />} />
         <Route path="/supporter-resources" element={<SupporterResourcesPage />} />
+        <Route path="/supporter-checklist" element={<SupporterChecklistPage />} />
       </Routes>
     </BrowserRouter>
   );
