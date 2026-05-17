@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import duck from "./assets/newChick.png";
+import duck from "./assets/chickAnimation.gif";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 
