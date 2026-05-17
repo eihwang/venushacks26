@@ -25,7 +25,7 @@ function LandingPage() {
         </button>
 
         <button
-          className="button"
+          className="Supporterbutton"
           onClick={() => navigate("/supporter")}
         >
           Supporter of<br />
