@@ -74,7 +74,7 @@ h1 {
 
 .navbar {
   height: 120px;
-  background: white;
+  background: url('src/assets/navbar.png');
   display: flex;
   align-items: center;
   justify-content: space-between;

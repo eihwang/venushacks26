@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import duck from "./assets/chick.png";
+import duck from "./assets/newChick.png";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 
@@ -157,7 +157,7 @@ function MotherResourcesPage() {
     <main className="page">
       <nav className="navbar">
         <div className="brand">
-          <img src={duck} alt="Duck" />
+          <img src={duck} alt="Duck" className="newChick"/>
           <h1>Expectant Mother</h1>
         </div>
 
