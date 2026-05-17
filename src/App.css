@@ -60,21 +60,37 @@ h1 {
   width: 520px;
   min-height: 90px;
   margin: 0 auto 18px;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.75);
+
+  background: rgba(255, 70, 129, 0.28);
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 136, 174, 0.28);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 8px 24px rgba(120, 40, 80, 0.12),
+    inset 0 1px 1px rgba(255,255,255,0.35);
+
   font-size: 32px;
-  color: black;
+  color: white;
+
   cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .page {
   min-height: 100vh;
   width: 100%;
   background:
-  radial-gradient(circle at top left, #ff9fbd 0%, transparent 40%),
+  radial-gradient(circle at top left, #f590b0 0%, transparent 40%),
   radial-gradient(circle at bottom right, #ffb6c9 0%, transparent 40%),
-  linear-gradient(135deg, #fff0f5, #ffc8d8);
+  linear-gradient(135deg, #fff0f5, #fbbbcd);
   font-family: Arial, Helvetica, sans-serif;
 }
 
