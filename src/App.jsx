@@ -241,17 +241,33 @@ function MotherResourcesPage() {
 
       <section className="symptoms-section">
         <h2>Resources</h2>
-        <p>Report symptoms you have experienced during pregnancy.</p>
+        <a href="https://americanpregnancy.org/ " target="_blank"><h3>Pregnancy Related Information</h3></a>
+        <a href="https://americanpregnancy.org/ " target="_blank"><h3><img src= "src/assets/apa1.jpg" width = "60%"></img></h3></a>
         <h4>You're not alone! For over two decades, the American Pregnancy Association has stood as a steady hand for millions of families.
            As a national non-profit with your well being at our core, we provide the evidence-based clarity and compassionate
             guidance you need to navigate every stage of your journey with confidence.</h4>
-        <a href= "https://americanpregnancy.org/ ">insert image</a>
+        <p></p>
+        <a href="https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE"
+          target="_blank">
+          <h3>Cardiovascular Health</h3></a> 
         <h4>Heart disease is one of the leading causes of pregnancy-related deaths for women. It is important to understand
           and raise awareness on these concerns as even medical professionals might dimish symptoms as less severe.
           Visit Professional.heart.org to check out more information on this topic. 
         </h4>
-        <a href= "https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE">
-        Insert image</a>
+        <a href= "https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE" 
+          target="_blank">
+          <img src="src\assets\American-Heart-Association-logo.jpg" width="60%"></img></a>
+        <p></p>
+        <a href="https://www.nami.org/new-parents/ " target="_blank"><h3>Mental Health Resources</h3></a>
+        
+        <a href="https://www.nami.org/new-parents/ " target="_blank"><img src= "src\assets\nami-logo-blue-002.jpg" width = "60%"></img></a>
+        <h4>Postpartum symptoms increases rates of depression, it is important to keep track of mental health 
+          in addition to physical health. NAMI is a great resource of mental health support.
+        </h4>
+        <p></p>
+        <a href="https://headstart.gov/pregnancy/article/resources-share-expectant-families" target="_blank"><h3>Programs + Learning Resources</h3></a>
+        <a href="https://headstart.gov/pregnancy/article/resources-share-expectant-families" target="_blank"><img src="src\assets\hs-logo.jpg" width = "60%"></img></a>
+        <h4>Explore eligibility and program information and hear from enrolled teen parents about the benefits of EHS.</h4>
       </section>
     </main>
   );
@@ -278,7 +294,7 @@ function SupporterResourcesPage() {
         <h2>Resources</h2>
         
         <div className="faq">
-          <h2>FAQs</h2>
+          <a href="https://miraclecord.com/news/how-to-support-pregnant-wife/ " target="_blank"><h3>FAQS</h3></a>
           <div>
             <details>
               <summary>
@@ -343,13 +359,30 @@ function SupporterResourcesPage() {
               </p>
             </details>
           </div>
-          <a href="https://www.acog.org/womens-health/faqs/a-partners-guide-to-pregnancy"> More faqs, replace with image</a>
-          <h2>How to support an expecting mother through pregnancy and postpartum</h2>
+          <p></p>
+          <a href="https://www.acog.org/womens-health/faqs/a-partners-guide-to-pregnancy" target="_blank"><img src="src\assets\acog-logo.svg" width = "60%"></img></a>
+          <p></p>
+          <a href="https://miraclecord.com/news/how-to-support-pregnant-wife/ " target="_blank"><h3>Support Resources</h3></a>
+
+          
+          <a href="https://miraclecord.com/news/how-to-support-pregnant-wife/ " target="_blank"><img src= "src\assets\images.png" width = "60%"></img></a>
           <h4>Pregnancy is difficult for the mother to deal with, as partners/supporters it is important to ensure that 
             the mother doesn't feel alone on this journey. There are countless ways to support them and it might feel overwhelming.
             here are some resources you can start with to support them. Help combat the symptoms and support women's health!
           </h4>
-          <a href= "https://miraclecord.com/news/how-to-support-pregnant-wife/ ">link replace with thumbnail</a>
+          
+          <p></p>
+          <a href="https://www.nami.org/new-parents/ " target="_blank"><h3>Mental Health Resources</h3></a>
+
+          <a href="https://www.nami.org/new-parents/ " target="_blank"><img src="src\assets\nami-logo-blue-002.jpg" width="60%"></img></a>
+          <h4>Postpartum symptoms increases rates of depression, it is important to keep track of mental health
+            in addition to physical health. NAMI is a great resource of mental health support.
+          </h4>
+          <p></p>
+          <a href="https://headstart.gov/pregnancy/article/resources-share-expectant-families" target="_blank"><h3>Programs + Learning Resources</h3></a>
+          <a href="https://headstart.gov/pregnancy/article/resources-share-expectant-families" target="_blank"><img src="src\assets\hs-logo.jpg" width="60%"></img></a>
+          <h4>Explore eligibility and program information and hear from enrolled teen parents about the benefits of EHS.</h4>
+          
         </div>
       </section>
     </main>
