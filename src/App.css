@@ -307,8 +307,16 @@ ul {
 li {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 14px;
   line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+li input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 7px;
 }
 
 .results-section{
