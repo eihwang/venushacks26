@@ -259,9 +259,10 @@ h1 {
 .symptoms-section h2 {
   font-family: 'Fredoka', sans-serif;
   font-size: 56px;
-  font-weight: 400;
+  font-weight: bold;
   text-decoration: underline;
   margin: 0 0 35px;
+  color: #bc3a5e;
 }
 
 .symptoms-section p {
