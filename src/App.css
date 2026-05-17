@@ -19,7 +19,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8d2d2;
+  background:
+  radial-gradient(circle at top left, #ff9fbd 0%, transparent 40%),
+  radial-gradient(circle at bottom right, #ffb6c9 0%, transparent 40%),
+  linear-gradient(135deg, #fff0f5, #ffc8d8);
 }
 
 .card {
@@ -68,13 +71,16 @@ h1 {
 .page {
   min-height: 100vh;
   width: 100%;
-  background: #f8d2d2;
+  background:
+  radial-gradient(circle at top left, #ff9fbd 0%, transparent 40%),
+  radial-gradient(circle at bottom right, #ffb6c9 0%, transparent 40%),
+  linear-gradient(135deg, #fff0f5, #ffc8d8);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
   height: 120px;
-  background: white;
+  background: url('src/assets/navbar.png');
   display: flex;
   align-items: center;
   justify-content: space-between;
