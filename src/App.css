@@ -335,3 +335,9 @@ li {
   display: block;
   font-size: 28px;
 }
+.faq p{
+  color:#bc3a5e;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  font-size: 24px;
+}

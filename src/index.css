@@ -111,3 +111,11 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.faq{
+  font-size: 32px;
+}
+
+.faq p{
+  font-size: 10px;
+}
