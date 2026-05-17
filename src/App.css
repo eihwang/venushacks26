@@ -345,3 +345,7 @@ li {
 h4{
   font-weight: normal;
 }
+
+.symptoms-section h4{
+  font-size: 34px;
+}
