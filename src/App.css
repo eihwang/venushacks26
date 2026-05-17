@@ -292,7 +292,7 @@ h1 {
 
 .questions {
   display: flex;
-  width: 60%;
+  width: 90%;
   justify-content: center;
   margin: 0 auto;
   gap: 45px;
@@ -308,6 +308,7 @@ li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  line-height: 1.5;
 }
 
 .results-section{
