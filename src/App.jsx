@@ -62,6 +62,7 @@ function MotherPage() {
           <Link to="/">Home</Link>
           <a className="active">Symptoms</a>
           <Link to="/mother-resources">Resources</Link>
+          <Link to="/mother-checklist">Checklist</Link>
         </div>
       </nav>
       
@@ -199,13 +200,14 @@ function MotherResourcesPage() {
       <nav className="navbar">
         <div className="brand">
           <img src={duck} alt="Duck" />
-          <h1>Supporter</h1>
+          <h1>Expectant Mother</h1>
         </div>
 
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/mother">Symptoms</Link>
           <a className="active">Resources</a>
+          <Link to="/mother-checklist">Checklist</Link>
         </div>
       </nav>
 
@@ -242,6 +244,31 @@ function SupporterChecklistPage() {
   );
 }
 
+function MotherChecklistPage() {
+  return (
+    <main className="page">
+      <nav className="navbar">
+        <div className="brand">
+          <img src={duck} alt="Duck" />
+          <h1>Expectant Mother</h1>
+        </div>
+
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/mother">Symptoms</Link>
+          <Link to="/mother-resources">Resources</Link>
+          <a className="active">Checklist</a>
+        </div>
+      </nav>
+
+      <section className="symptoms-section">
+        <h2>Checklist</h2>
+        <p>Here is a list of things for your to-go bag when the time comes!</p>
+      </section>
+    </main>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -252,6 +279,7 @@ export default function App() {
         <Route path="/mother-resources" element={<MotherResourcesPage />} />
         <Route path="/supporter-resources" element={<SupporterResourcesPage />} />
         <Route path="/supporter-checklist" element={<SupporterChecklistPage />} />
+        <Route path="/mother-checklist" element={<MotherChecklistPage />} />
       </Routes>
     </BrowserRouter>
   );
