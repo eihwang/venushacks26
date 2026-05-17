@@ -1,19 +1,23 @@
 * {
   box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
 }
 
 html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Fredoka', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .start-page {
+  font-family: 'Fredoka', sans-serif;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -26,11 +30,13 @@ body {
 }
 
 .card {
+  font-family: 'Fredoka', sans-serif;
   text-align: center;
   transform: translateY(-20px);
 }
 
 .title-row {
+  font-family: 'Fredoka', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +44,7 @@ body {
 }
 
 h1 {
+  font-family: 'Fredoka', sans-serif;
   margin: 0;
   font-size: 64px;
   font-weight: 800;
@@ -45,11 +52,13 @@ h1 {
 }
 
 .duck {
+  font-family: 'Fredoka', sans-serif;
   width: 90px;
   height: auto;
 }
 
 .tagline {
+  font-family: 'Fredoka', sans-serif;
   margin: 28px 0 36px;
   font-size: 32px;
   color: black;
@@ -75,6 +84,7 @@ h1 {
 
   font-size: 32px;
   color: white;
+  font-family: 'Fredoka', sans-serif;
 
   cursor: pointer;
 
@@ -91,7 +101,7 @@ h1 {
   radial-gradient(circle at top left, #f590b0 0%, transparent 40%),
   radial-gradient(circle at bottom right, #ffb6c9 0%, transparent 40%),
   linear-gradient(135deg, #fff0f5, #fbbbcd);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .navbar {
@@ -142,6 +152,7 @@ h1 {
 }
 
 .symptoms-section h2 {
+  font-family: 'Fredoka', sans-serif;
   font-size: 56px;
   font-weight: 400;
   text-decoration: underline;
