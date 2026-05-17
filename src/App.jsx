@@ -36,10 +36,8 @@ function LandingPage() {
   );
 }
 
-
 function MotherPage() {
   const [inputs, setInputs] = useState({});
-
 
   const handleChange = (e) => {
     const target = e.target;
@@ -48,11 +46,9 @@ function MotherPage() {
     setInputs(values => ({ ...values, [name]: value }))
   }
 
-
   const handleSubmit = (event) => {
     //implement submit logic
   }
-
 
   return (
     <main className="page">
@@ -62,68 +58,39 @@ function MotherPage() {
           <h1>Expectant Mother</h1>
         </div>
 
-
         <div className="nav-links">
           <Link to="/">Home</Link>
           <a className="active">Symptoms</a>
           <Link to="/mother-resources">Resources</Link>
+          <Link to="/mother-checklist">Checklist</Link>
         </div>
       </nav><section className="symptoms-section">
         <h2>Symptoms Survey</h2>
         <p>Report symptoms you have during pregnancy.</p>
-
+        <button type="submit">Submit</button>
 
         <div className="questions">
-          <span>Question:</span>
-          <span><input type="checkbox" checked></input></span>
-          <span>No</span>
-
           <ul>
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced trouble breathing recently</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced chest pain or discomfort</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've noticed a fast, racing, or irregular heartbeat</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced extreme swelling, especially in your legs, feet, or hands</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced unusual or sudden weight gain</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced dizziness or fainting spells</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've felt overwhelming or unusual tiredness/fatigue</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've had a cough that does not go away</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood pressure</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high cholesterol levels</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood sugar or diabetes</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I have a personal or family history of heart disease or cardiovascular problems</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I am currently taking some sort of medication</li>
-
             <li><input type="checkbox" name="point" onChange={handleChange} /> I currently use some sort of drugs or substances (including recreational drugs, tobacco, or vaping products)</li>
           </ul>
-
-
-
-
-
-
         </div>
-
-
-
-
-        <button type="submit">Submit</button>
       </section>
     </main>
   );
 }
-
 
 function SupporterPage() {
   return (
@@ -156,31 +123,6 @@ function SupporterPage() {
   );
 }
 
-function SupporterResourcesPage() {
-  return (
-    <main className="page">
-      <nav className="navbar">
-        <div className="brand">
-          <img src={duck} alt="Duck" />
-          <h1>Supporter</h1>
-        </div>
-
-        <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/supporter">Symptoms</Link>
-          <a className="active">Resources</a>
-          <Link to="/supporter-checklist">Checklist</Link>
-        </div>
-      </nav>
-
-      <section className="symptoms-section">
-        <h2>Resources</h2>
-        <p>Report symptoms you have experienced during pregnancy.</p>
-      </section>
-    </main>
-  );
-}
-
 function MotherResourcesPage() {
   return (
     <main className="page">
@@ -206,7 +148,7 @@ function MotherResourcesPage() {
   );
 }
 
-function SupporterChecklistPage() {
+function SupporterResourcesPage() {
   return (
     <main className="page">
       <nav className="navbar">
@@ -218,14 +160,14 @@ function SupporterChecklistPage() {
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/supporter">Symptoms</Link>
-          <Link to="/supporter-resources">Resources</Link>
-          <a className="active">Checklist</a>
+          <a className="active">Resources</a>
+          <Link to="/supporter-checklist">Checklist</Link>
         </div>
       </nav>
 
       <section className="symptoms-section">
-        <h2>Checklist</h2>
-        <p>Here is a list of things for your to-go bag when the time comes!</p>
+        <h2>Resources</h2>
+        <p>Report symptoms you have experienced during pregnancy.</p>
       </section>
     </main>
   );
@@ -251,6 +193,59 @@ function MotherChecklistPage() {
       <section className="symptoms-section">
         <h2>Checklist</h2>
         <p>Here is a list of things for your to-go bag when the time comes!</p>
+
+        <div className="questions">
+          <ul>
+            <li><input type="checkbox" name="point" /> Health plan insurance card</li>
+            <li><input type="checkbox" name="point" /> Hospital admissions papers</li>
+            <li><input type="checkbox" name="point" /> Pregnancy medical file, including over-the-counter and prescription medicine information</li>
+            <li><input type="checkbox" name="point" /> Birth preferences</li>
+            <li><input type="checkbox" name="point" /> Contact information of the health care provider who will be caring for your baby</li>
+            <li><input type="checkbox" name="point" /> Toiletries (toothbrush, toothpaste, hair brush, etc.)</li>
+            <li><input type="checkbox" name="point" /> Comfortable and loose fitting clothing to wear home</li>
+            <li><input type="checkbox" name="point" /> Going home outfit for baby</li>
+            <li><input type="checkbox" name="point" /> Baby car seat, a car seat is required by law and should be properly installed in your car before you go to the hospital</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function SupporterChecklistPage() {
+  return (
+    <main className="page">
+      <nav className="navbar">
+        <div className="brand">
+          <img src={duck} alt="Duck" />
+          <h1>Supporter</h1>
+        </div>
+
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/supporter">Symptoms</Link>
+          <Link to="/supporter-resources">Resources</Link>
+          <a className="active">Checklist</a>
+        </div>
+      </nav>
+
+      <section className="symptoms-section">
+        <h2>Checklist</h2>
+        <p>Here is a list of things for your to-go bag when the time comes!</p>
+
+        <div className="questions">
+          <ul>
+            <li><input type="checkbox" name="point" /> Health plan insurance card</li>
+            <li><input type="checkbox" name="point" /> Hospital admissions papers</li>
+            <li><input type="checkbox" name="point" /> Pregnancy medical file, including over-the-counter and prescription medicine information</li>
+            <li><input type="checkbox" name="point" /> Birth preferences</li>
+            <li><input type="checkbox" name="point" /> Contact information of the health care provider who will be caring for your baby</li>
+            <li><input type="checkbox" name="point" /> Toiletries (toothbrush, toothpaste, hair brush, etc.)</li>
+            <li><input type="checkbox" name="point" /> Comfortable and loose fitting clothing to wear home</li>
+            <li><input type="checkbox" name="point" /> Going home outfit for baby</li>
+            <li><input type="checkbox" name="point" /> Baby car seat, a car seat is required by law and should be properly installed in your car before you go to the hospital</li>
+          </ul>
+        </div>
       </section>
     </main>
   );
@@ -265,8 +260,8 @@ export default function App() {
         <Route path="/supporter" element={<SupporterPage />} />
         <Route path="/mother-resources" element={<MotherResourcesPage />} />
         <Route path="/supporter-resources" element={<SupporterResourcesPage />} />
-        <Route path="/supporter-checklist" element={<SupporterChecklistPage />} />
         <Route path="/mother-checklist" element={<MotherChecklistPage />} />
+        <Route path="/supporter-checklist" element={<SupporterChecklistPage />} />
       </Routes>
     </BrowserRouter>
   );

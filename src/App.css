@@ -137,3 +137,23 @@ h1 {
   gap: 45px;
   font-size: 34px;
 }
+
+.questions {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 45px;
+  font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
