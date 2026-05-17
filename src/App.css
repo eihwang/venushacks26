@@ -210,6 +210,18 @@ h1 {
 .symptoms-section {
   text-align: center;
   padding-top: 40px;
+  background: rgba(#ffc8d8);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 16px;
+
+  padding: 12px 24px;
+  color: white;
+
+  display: inline-block;
+  
+  
 }
 
 .symptoms-section h2 {
