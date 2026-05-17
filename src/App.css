@@ -30,9 +30,23 @@ body {
 }
 
 .card {
-  font-family: 'Fredoka', sans-serif;
   text-align: center;
   transform: translateY(-20px);
+
+  padding: 55px 70px;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 2px solid rgba(255,255,255,0.32);
+
+  border-radius: 32px;
+
+  box-shadow:
+    0 20px 50px rgba(120, 40, 80, 0.18),
+    inset 0 1px 1px rgba(255,255,255,0.35);
 }
 
 .title-row {
