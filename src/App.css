@@ -200,9 +200,9 @@ h1 {
 
 .brand h1 {
   font-size: 52px;
-  color: #1f8f22;
+  color: #155e18;
   text-decoration: underline;
-  text-decoration-color: #1e9bff;
+  text-decoration-color: #155e18;
   margin: 0;
 }
 
@@ -213,8 +213,9 @@ h1 {
 }
 
 .nav-links a {
-  color: black;
+  color: #155e18;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-links .active {
