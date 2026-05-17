@@ -250,13 +250,16 @@ function MotherResourcesPage() {
         <a href="https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE"
           target="_blank">
           <h3>Cardiovascular Health</h3></a> 
+                <a href= "https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE" 
+          target="_blank">
+          <img src="src\assets\American-Heart-Association-logo.jpg" width="45%"></img></a>
         <h4>Heart disease is one of the leading causes of pregnancy-related deaths for women. It is important to understand
           and raise awareness on these concerns as even medical professionals might dimish symptoms as less severe.
           Visit Professional.heart.org to check out more information on this topic. 
         </h4>
-        <a href= "https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE" 
+        {/* <a href= "https://professional.heart.org/en/education/role-of-cardiovascular-health-in-maternal-health?utm_medium=paid+search&utm_source=google&utm_campaign=th_maternal&utm_content=&adgroup=&utm_term=cardiac%20disease%20during%20pregnancy&gad_source=1&gad_campaignid=22498248194&gbraid=0AAAAA-v77OU5yCyunkt4fGgKmPNufkE1h&gclid=CjwKCAjwq6DQBhBVEiwA4ZD5XB2gSs29O5Q3hqDXdB6memBVhBhuWvsaEcRz_NcZvKRStel8g-l11xoCaBgQAvD_BwE" 
           target="_blank">
-          <img src="src\assets\American-Heart-Association-logo.jpg" width="45%"></img></a>
+          <img src="src\assets\American-Heart-Association-logo.jpg" width="45%"></img></a> */}
         <p></p>
         <a href="https://www.nami.org/new-parents/ " target="_blank"><h3>Mental Health Resources</h3></a>
         
