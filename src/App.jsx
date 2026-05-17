@@ -1,12 +1,8 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import duck from "./assets/chick.png";
-<<<<<<< HEAD
-import{useState} from 'react';
-=======
 import { Link } from "react-router-dom";
 import { useState } from 'react';
->>>>>>> 5b60c2c5c9b0f02134420bb84398684b5c14d3f2
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -40,19 +36,23 @@ function LandingPage() {
   );
 }
 
+
 function MotherPage() {
-  const [inputs,setInputs] = useState({});
-  
-  const handleChange = (e)=>{
+  const [inputs, setInputs] = useState({});
+
+
+  const handleChange = (e) => {
     const target = e.target;
-    const value = target.type === 'checkbox'?target.checed :target.value;
+    const value = target.type === 'checkbox' ? target.checed : target.value;
     const name = target.name;
-    setInputs(values => ({...values, [name]:value}))
+    setInputs(values => ({ ...values, [name]: value }))
   }
 
-  const handleSubmit = (event)=>{
+
+  const handleSubmit = (event) => {
     //implement submit logic
   }
+
 
   return (
     <main className="page">
@@ -62,85 +62,68 @@ function MotherPage() {
           <h1>Expectant Mother</h1>
         </div>
 
+
         <div className="nav-links">
           <Link to="/">Home</Link>
           <a className="active">Symptoms</a>
           <Link to="/mother-resources">Resources</Link>
-          <Link to="/mother-checklist">Checklist</Link>
         </div>
-      </nav>
-      
-      <section className="symptoms-section">
+      </nav><section className="symptoms-section">
         <h2>Symptoms Survey</h2>
-        <p>Report symptoms you have experienced during pregnancy.</p>
+        <p>Report symptoms you have during pregnancy.</p>
+
 
         <div className="questions">
           <span>Question:</span>
-          <span><input type = "checkbox" checked></input></span>
+          <span><input type="checkbox" checked></input></span>
           <span>No</span>
-          <div className = "q1"> 
-          <form onSubmit = {handleSubmit}>
-            <label>1. Are you ?
-              <input type = "checkbox" name = "q1" value = {inputs.q1} onChange ={handleChange}/>
-            </label>
-          </form>
-          </div>
 
-          <div className="q2">
-            <form onSubmit={handleSubmit}>
-              <label>2. Have you experienced trouble breathing recently?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+          <ul>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced trouble breathing recently</li>
 
-          <div className="q3">
-            <form onSubmit={handleSubmit}>
-              <label>3. Have you experienced chest pain or discomfort?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced chest pain or discomfort</li>
 
-          <div className="q4">
-            <form onSubmit={handleSubmit}>
-              <label>4. Have you noticed a fast, racing, or irregular heartbeat?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've noticed a fast, racing, or irregular heartbeat</li>
 
-          <div className="q5">
-            <form onSubmit={handleSubmit}>
-              <label>5. Have you experienced extreme swelling, especially in your legs, feet, or hands?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced extreme swelling, especially in your legs, feet, or hands</li>
 
-          <div className="q6">
-            <form onSubmit={handleSubmit}>
-              <label>6. Have you experienced unusual or sudden weight gain?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced unusual or sudden weight gain</li>
 
-          <div className="q7">
-            <form onSubmit={handleSubmit}>
-              <label>7. Have you experienced unusual or sudden weight gain?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've experienced dizziness or fainting spells</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've felt overwhelming or unusual tiredness/fatigue</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've had a cough that does not go away</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood pressure</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high cholesterol levels</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I've been told you have high blood sugar or diabetes</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I have a personal or family history of heart disease or cardiovascular problems</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I am currently taking some sort of medication</li>
+
+            <li><input type="checkbox" name="point" onChange={handleChange} /> I currently use some sort of drugs or substances (including recreational drugs, tobacco, or vaping products)</li>
+          </ul>
+
+
+
+
+
+
         </div>
 
 
-        <button type = "submit">Submit</button>
+
+
+        <button type="submit">Submit</button>
       </section>
     </main>
   );
 }
+
 
 function SupporterPage() {
   return (
@@ -163,76 +146,16 @@ function SupporterPage() {
         <h2>Symptoms Survey</h2>
         <p>Report symptoms you have experienced during pregnancy.</p>
 
-        <div className="questions">
+        <div className="question-row">
           <span>Question:</span>
-          <span><input type = "checkbox" checked></input></span>
+          <span>Yes</span>
           <span>No</span>
-          <div className = "q1"> 
-          <form onSubmit = {handleSubmit}>
-            <label>1. Are you ?
-              <input type = "checkbox" name = "q1" value = {inputs.q1} onChange ={handleChange}/>
-            </label>
-          </form>
-          </div>
-
-          <div className="q2">
-            <form onSubmit={handleSubmit}>
-              <label>2. Have you experienced trouble breathing recently?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
-
-          <div className="q3">
-            <form onSubmit={handleSubmit}>
-              <label>3. Have you experienced chest pain or discomfort?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
-
-          <div className="q4">
-            <form onSubmit={handleSubmit}>
-              <label>4. Have you noticed a fast, racing, or irregular heartbeat?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
-
-          <div className="q5">
-            <form onSubmit={handleSubmit}>
-              <label>5. Have you experienced extreme swelling, especially in your legs, feet, or hands?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
-
-          <div className="q6">
-            <form onSubmit={handleSubmit}>
-              <label>6. Have you experienced unusual or sudden weight gain?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
-
-          <div className="q7">
-            <form onSubmit={handleSubmit}>
-              <label>7. Have you experienced unusual or sudden weight gain?
-                <input type="checkbox" name="q1" value={inputs.q1} onChange={handleChange} />
-              </label>
-            </form>
-          </div>
         </div>
-
-
-        <button type = "submit">Submit</button>
       </section>
     </main>
   );
 }
 
-<<<<<<< HEAD
-=======
 function SupporterResourcesPage() {
   return (
     <main className="page">
@@ -282,7 +205,6 @@ function MotherResourcesPage() {
     </main>
   );
 }
->>>>>>> 5b60c2c5c9b0f02134420bb84398684b5c14d3f2
 
 function SupporterChecklistPage() {
   return (
